@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cadol.exsem4.MainActivity">
+    <item
+        android:id="@+id/mcontato"
+        android:orderInCategory="100"
+        android:title="@string/menu_contacto"
+       app:showAsAction="never" />
+    <item
+        android:id="@+id/macerca"
+        android:orderInCategory="101"
+        android:title="@string/menu_acerca"
+        app:showAsAction="never" />
+</menu>

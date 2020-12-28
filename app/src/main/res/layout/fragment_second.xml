@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgframe2"
+            android:layout_width="344dp"
+            android:layout_height="197dp"
+            android:src="@drawable/chocolate"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4sp"
+            app:civ_shadow="false"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10" />
+
+        <TextView
+            android:id="@+id/textview_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chocolate"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/am_gv_gridview"
+        android:layout_width="371dp"
+        android:layout_height="318dp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="117dp"
+        android:columnWidth="110sp"
+        android:horizontalSpacing="10sp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
